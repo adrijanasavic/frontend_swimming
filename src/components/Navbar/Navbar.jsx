@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useSelector, useDispatch } from "react-redux";
-import { setLanguage } from "../redux/settingsSlice";
-import images from "../constants/images";
-import item from "../constants/data";
+import { setLanguage } from "./../../redux/settingsSlice";
+import images from "./../../constants/images";
+import data from "./../../constants/data";
 import { FaSwimmer } from "react-icons/fa";
 import "./Navbar.css";
 
 function Navbar() {
-  const [toggleMenu, setToggleMenu] = React.useState(false);
-
+  
+  const [toggleMenu, setToggleMenu] =useState(false);
   const { language } = useSelector((state) => state.settings);
-
   const dispatch = useDispatch();
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -20,16 +20,16 @@ function Navbar() {
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="#home">{item.nav.Home[language]}</a>
+          <a href="#home">{data.nav.Home[language]}</a>
         </li>
         <li className="p__opensans">
-          <a href="#about">{item.nav.About[language]}</a>
+          <a href="#about">{data.nav.About[language]}</a>
         </li>
         <li className="p__opensans">
-          <a href="#menu">{item.nav.Menu[language]}</a>
+          <a href="#menu">{data.nav.Menu[language]}</a>
         </li>
         <li className="p__opensans">
-          <a href="#contact">{item.nav.Contact[language]}</a>
+          <a href="#contact">{data.nav.Contact[language]}</a>
         </li>
       </ul>
       <div className="app__navbar-login">
@@ -37,27 +37,6 @@ function Navbar() {
           className="select__opensans"
           onChange={(e) => {
             dispatch(setLanguage(e.target.value));
-            if (e.target.value === "Sr") {
-              document.getElementById("root").dir = "rtl";
-              document.documentElement.style.setProperty(
-                "--font-alt",
-                "'Vazirmatn', sans-serif"
-              );
-              document.documentElement.style.setProperty(
-                "--font-base",
-                "'Farnaz', sans-serif"
-              );
-            } else {
-              document.getElementById("root").dir = "ltr";
-              document.documentElement.style.setProperty(
-                "--font-alt",
-                "'Open Sans', sans-serif"
-              );
-              document.documentElement.style.setProperty(
-                "--font-base",
-                "'Cormorant Upright', sans-serif"
-              );
-            }
           }}
           value={language}
         >
@@ -90,7 +69,7 @@ function Navbar() {
                     setToggleMenu(false);
                   }}
                 >
-                  {item.nav.Home[language]}
+                  {data.nav.Home[language]}
                 </a>
               </li>
               <li className="p__opensans">
@@ -100,7 +79,7 @@ function Navbar() {
                     setToggleMenu(false);
                   }}
                 >
-                  {item.nav.About[language]}
+                  {data.nav.About[language]}
                 </a>
               </li>
               <li
@@ -109,7 +88,7 @@ function Navbar() {
                   setToggleMenu(false);
                 }}
               >
-                <a href="#menu">{item.nav.Menu[language]}</a>
+                <a href="#menu">{data.nav.Menu[language]}</a>
               </li>
               <li className="p__opensans">
                 <a
@@ -118,7 +97,7 @@ function Navbar() {
                     setToggleMenu(false);
                   }}
                 >
-                  {item.nav.Contact[language]}
+                  {data.nav.Contact[language]}
                 </a>
               </li>
               <li className="p__opensans">
@@ -126,27 +105,6 @@ function Navbar() {
                   className="select__opensans"
                   onChange={(e) => {
                     dispatch(setLanguage(e.target.value));
-                    if (e.target.value === "Sr") {
-                      document.getElementById("root").dir = "rtl";
-                      document.documentElement.style.setProperty(
-                        "--font-alt",
-                        "'Vazirmatn', sans-serif"
-                      );
-                      document.documentElement.style.setProperty(
-                        "--font-base",
-                        "'Farnaz', sans-serif"
-                      );
-                    } else {
-                      document.getElementById("root").dir = "ltr";
-                      document.documentElement.style.setProperty(
-                        "--font-alt",
-                        "'Open Sans', sans-serif"
-                      );
-                      document.documentElement.style.setProperty(
-                        "--font-base",
-                        "'Cormorant Upright', sans-serif"
-                      );
-                    }
                   }}
                   value={language}
                 >
