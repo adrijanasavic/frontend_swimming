@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutUs from "./components/AboutUs/AboutUs";
+import Gallery from "./components/Gallery/Gallery";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Personal from "./components/Personal/Personal";
@@ -12,7 +13,8 @@ function App() {
       <Header />
       <AboutUs />
       <Specijal />
-      <Personal/>
+      <Personal />
+      <Gallery/>
     </div>
   );
 }
