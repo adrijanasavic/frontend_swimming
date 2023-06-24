@@ -34,4 +34,98 @@ const about = {
     En: "Individual programs may also include relaxation and body conditioning techniques that help increase mobility and flexibility. The goal is for clients to work on their skills in order to improve their personal swimming.",
   },
 };
-export default { nav, header, about };
+const special = {
+  En: [
+    {
+      title: "Group",
+      price: "8000 RSD",
+      tags: "PACKAGE OF 8 HOURS | 30 DAYS",
+    },
+    {
+      title: "Family",
+      price: "3500 RSD",
+      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+    },
+    {
+      title: "Individual",
+      price: "4000 RSD",
+      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+    },
+    {
+      title: "Therapeutic",
+      price: "3000 RSD",
+      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+    },
+  ],
+  Sr: [
+    {
+      title: "Grupni",
+      price: "8000 RSD",
+      tags: "PAKET 8 ČASOVA | 30 DANA",
+    },
+    {
+      title: "Porodični",
+      price: "3500 RSD",
+      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+    },
+    {
+      title: "Individualni",
+      price: "4000 RSD",
+      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+    },
+    {
+      title: "Terapijski",
+      price: "3000 RSD",
+      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+    },
+  ],
+};
+
+const individual = {
+  En: [
+    {
+      title: "Group",
+      price: "8000 RSD",
+      tags: "PACKAGE OF 8 HOURS | 30 DAYS",
+    },
+    {
+      title: "Family",
+      price: "3500 RSD",
+      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+    },
+    {
+      title: "Individual",
+      price: "4000 RSD",
+      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+    },
+    {
+      title: "Therapeutic",
+      price: "3000 RSD",
+      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+    },
+  ],
+  Sr: [
+    {
+      title: "Grupni",
+      price: "8000 RSD",
+      tags: "PAKET 8 ČASOVA | 30 DANA",
+    },
+    {
+      title: "Porodični",
+      price: "3500 RSD",
+      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+    },
+    {
+      title: "Individualni",
+      price: "4000 RSD",
+      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+    },
+    {
+      title: "Terapijski",
+      price: "3000 RSD",
+      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+    },
+  ],
+};
+
+export default { nav, header, about, special, individual };
