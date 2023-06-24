@@ -1,6 +1,7 @@
 import "./App.css";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Gallery from "./components/Gallery/Gallery";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
@@ -16,7 +17,8 @@ function App() {
       <Specijal />
       <Personal />
       <Gallery />
-      <Contact/>
+      <Contact />
+      <Footer/>
     </div>
   );
 }
