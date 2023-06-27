@@ -29,18 +29,22 @@ function Footer() {
         <div className="app__footer-links_logo">
           <img src={images.logo} alt="footer_logo" />
           <div className="app__footer-links_icons">
-            <a href="https://www.facebook.com/zoranbozovic69" target="_blank">
+            <a href="https://www.facebook.com/zoranbozovic69"
+              target="_blank"
+              rel="noreferrer" >
               <FiFacebook />
             </a>
             <a
               href="https://www.linkedin.com/in/adrijana-savi%C4%87-50249176/"
               target="_blank"
+              rel="noreferrer"
             >
               <FiTwitter />
             </a>
             <a
               href="https://instagram.com/instruktorbozoviczoran?igshid=MzRlODBiNWFlZA=="
               target="_blank"
+              rel="noreferrer"
             >
               <FiInstagram />
             </a>
@@ -66,7 +70,8 @@ function Footer() {
       </div>
       <div className="footer__copyright">
         <p className="p__opensans" dir="ltr">
-          2023{" "}
+          Copyright &copy;
+          {new Date().getFullYear()}{" "}
           <span>
             <a
               rel="noreferrer"

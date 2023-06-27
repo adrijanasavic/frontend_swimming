@@ -6,17 +6,19 @@ import Personal from "../../components/Personal/Personal"
 import Gallery from "../../components/Gallery/Gallery"
 import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
+import Posts from "../../components/Posts/Posts"
 
 function Home() {
   return (
     <div>
-          <Header />
-          <AboutUs />
-          <Specijal />
-          <Personal />
-          <Gallery />
-          <Contact />
-          <Footer/>
+      <Header />
+      <AboutUs />
+      <Specijal />
+      <Personal />
+      <Gallery />
+      <Contact />
+      <Posts/>
+      <Footer />
     </div>
   )
 }

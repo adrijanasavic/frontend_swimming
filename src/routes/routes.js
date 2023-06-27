@@ -10,5 +10,9 @@ export const routes = {
     DASHBOARD: {
         name: "Dashboard",
         path: "/dashboard"
+    },
+    ADDPOST: {
+        name: 'AddPost',
+        path: "addpost"
     }
 };

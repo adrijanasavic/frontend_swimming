@@ -17,7 +17,7 @@ const Header = () => {
         <p className="p__opensans" style={{ margin: "2rem 0" }}>
           {data.header.description[language]}
         </p>
-        <button type="button" className="custom__button" id="contact">
+        <button type="button" className="custom__button">
           <a href="tel://+381641494033">
             {language === "En" ? "Contact us" : "Kontaktirajte nas"}
           </a>

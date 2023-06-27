@@ -17,6 +17,7 @@
     width: 100%;
     z-index: 2;
     display: flex;
+    padding-top: 4rem;
 }
 
 .app__aboutus-content_about {

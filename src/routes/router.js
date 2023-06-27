@@ -4,6 +4,7 @@ import App from "../App";
 import Login from "../pages/Login/Login";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import { Navigate } from "react-router-dom";
+import FormAddPost from "../components/FormAddPost/FormAddPost";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,14 @@ const router = createBrowserRouter([
                         <Dashboard />
                     </UserProtect>
                 ),
+            },
+            {
+                path: routes.ADDPOST.path,
+                element: (
+                    <UserProtect>
+                        <FormAddPost />
+                    </UserProtect>
+                )
             },
         ]
     }

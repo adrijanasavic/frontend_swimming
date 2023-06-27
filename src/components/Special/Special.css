@@ -1,5 +1,6 @@
 .app__specialMenu {
     flex-direction: column;
+    padding-top: 8rem;
 }
 
 .app__specialMenu-title {
