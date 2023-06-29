@@ -5,6 +5,7 @@ import Login from "../pages/Login/Login";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import { Navigate } from "react-router-dom";
 import FormAddPost from "../components/FormAddPost/FormAddPost";
+import FormEditPost from "../components/FormEditPost/FormEditPost";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,14 @@ const router = createBrowserRouter([
                 element: (
                     <UserProtect>
                         <FormAddPost />
+                    </UserProtect>
+                )
+            },
+            {
+                path: routes.EDITPOST.path,
+                element: (
+                    <UserProtect>
+                        <FormEditPost />
                     </UserProtect>
                 )
             },

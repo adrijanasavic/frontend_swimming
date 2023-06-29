@@ -3,6 +3,8 @@ const nav = {
   About: { Sr: "O nama", En: "About" },
   Menu: { Sr: "Ponuda", En: "Menu" },
   Contact: { Sr: "Kontakt", En: "Contact" },
+  Blog: { Sr: "Blog", En: "Blog" },
+
 };
 
 const header = {

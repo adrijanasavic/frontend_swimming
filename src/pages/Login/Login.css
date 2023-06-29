@@ -20,7 +20,7 @@
     padding: 5px 40px;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .box__form h2 {
@@ -103,7 +103,7 @@
     outline: none;
     background-color: var(--color-primary);
     padding: 10px 25px;
-    width: 100px;
+    width: 120px;
     margin-top: 10px;
     border-radius: 4px;
     font-weight: 800;

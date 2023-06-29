@@ -7,6 +7,7 @@ import Gallery from "../../components/Gallery/Gallery"
 import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
 import Posts from "../../components/Posts/Posts"
+import SwiperPost from "../../components/Swiper/SwiperPost"
 
 function Home() {
   return (
@@ -16,8 +17,9 @@ function Home() {
       <Specijal />
       <Personal />
       <Gallery />
+      <SwiperPost />
+      <Posts />
       <Contact />
-      <Posts/>
       <Footer />
     </div>
   )

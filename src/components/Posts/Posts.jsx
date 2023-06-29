@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import "./Posts.css";
+import { Link } from "react-router-dom";
 
 function Posts() {
 
@@ -17,6 +18,12 @@ function Posts() {
         }
     };
 
+    const deletePost = async (id) => {
+        axios.delete(`/post/${id}`).then((res) => {
+            setData(res.data);
+        });
+    };
+
     useEffect(() => {
         client.get().then((response) => {
             setData(response.data);
@@ -26,7 +33,8 @@ function Posts() {
     }, []);
 
     return (
-        <div className="container">
+        
+        <div className="container" id="blog">
             {data.map((item, index) => {
                 return (
                     <div className="card" key={index}>
@@ -44,8 +52,8 @@ function Posts() {
                         </div>
                         {user && (
                             <div className="botton">
-                                <div className="btn" to={`/project/${item._id}`}>Edit</div>
-                                <div className="btn">Delete</div>
+                                <Link className="btn" to={`/post/${item._id}`}>Izmena</Link>
+                                <Link className="btn" onClick={() => deletePost(item._id)}>Brisanje</Link>
                             </div>
                         )}
                     </div>

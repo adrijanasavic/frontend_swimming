@@ -13,6 +13,10 @@ export const routes = {
     },
     ADDPOST: {
         name: 'AddPost',
-        path: "addpost"
+        path: "/post"
+    },
+    EDITPOST: {
+        name: 'AddPost',
+        path: "/post/:id"
     }
 };

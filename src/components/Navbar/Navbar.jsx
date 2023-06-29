@@ -31,6 +31,9 @@ function Navbar() {
         <li className="p__opensans">
           <a href="#contact">{data.nav.Contact[language]}</a>
         </li>
+        <li className="p__opensans">
+          <a href="#blog">{data.nav.Blog[language]}</a>
+        </li>
       </ul>
       <div className="app__navbar-login">
         <select
@@ -98,6 +101,16 @@ function Navbar() {
                   }}
                 >
                   {data.nav.Contact[language]}
+                </a>
+              </li>
+              <li className="p__opensans">
+                <a
+                  href="#blog"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                >
+                  {data.nav.Blog[language]}
                 </a>
               </li>
               <li className="p__opensans">
