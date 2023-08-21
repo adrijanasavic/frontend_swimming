@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Header from "../../components/Header/Header"
 import AboutUs from "../../components/AboutUs/AboutUs"
 import Specijal from "../../components/Special/Specijal"
@@ -8,8 +8,17 @@ import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
 import Posts from "../../components/Posts/Posts"
 import SwiperPost from "../../components/Swiper/SwiperPost"
+import { useDispatch } from "react-redux"
+import { setLanguage } from "../../redux/settingsSlice"
 
-function Home() {
+function Home({ lang }) {
+ 
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+      dispatch(setLanguage(lang))
+  }, [lang])
+
   return (
     <div>
       <Header />
@@ -17,7 +26,7 @@ function Home() {
       <Specijal />
       <Personal />
       <Gallery />
-      <SwiperPost />
+      {/* <SwiperPost /> */}
       <Posts />
       <Contact />
       <Footer />

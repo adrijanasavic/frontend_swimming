@@ -24,9 +24,9 @@ function Specijal() {
                     <p className="app__specialMenu-menu_heading">
                         {language === "En" ? "Special packages" : "Specijalni paketi"}
                     </p>
-                    <div className="app__specialMenu-menu_items">
+                    <div className="app__specialMenu-menu_items" data-aos="zoom-in-up">
                         {data.special[language].map((spec, index) => (
-                            <MenuItem
+                            <MenuItem 
                                 key={spec.title + index}
                                 title={spec.title}
                                 price={spec.price}
@@ -46,7 +46,7 @@ function Specijal() {
                             ? "Individual trainings"
                             : "Individualni treninzi"}
                     </p>
-                    <div className="app__specialMenu-menu_items">
+                    <div className="app__specialMenu-menu_items" data-aos="zoom-in-up">
                         {data.individual[language].map((ind, index) => (
                             <MenuItem
                                 key={ind.title + index}

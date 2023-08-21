@@ -3,7 +3,7 @@
     background-color: var(--color-secondary);
     font-family: var(--font-alt);
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--fontSize-secondary);
 }
 
 .contact-container {
@@ -23,7 +23,7 @@
 }
 
 .contact-container-wrapper-left-title {
-    font-size: 36px;
+    font-size: var(--fontSize-primary);
     width: 80%;
     margin-left: 60px;
 }
@@ -62,19 +62,19 @@
     margin-bottom: 10px;
     border: none;
     border-bottom: 1px solid black;
-    font-size: 14px;
+    font-size: var(--fontSize-secondary);
     padding-left: 10px;
 }
 
 .contact-container-wrapper-right form textarea {
     width: 100%;
     margin: 10px 0px;
-    font-size: 14px;
+    font-size: var(--fontSize-secondary);
     padding-left: 10px;
 }
 
 .contact-container-wrapper-right form .btn {
-    font-size: 1.4rem;
+    font-size: var(--fontSize-secondary);
     padding: 12px;
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -84,7 +84,7 @@
 }
 
 .contact-container-wrapper-right form .btn:hover {
-    font-size: 1.4rem;
+    font-size: var(--fontSize-secondary);
     background-color: var(--color-primary);
     color: var(--color-white);
     box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -109,7 +109,7 @@
     }
 
     .contact-container-wrapper-left-title {
-        font-size: 30px;
+        font-size: var(--fontSize-primary);
     }
 
     .contact-container-wrapper-left-title-item {

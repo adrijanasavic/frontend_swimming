@@ -8,6 +8,9 @@ const initData = {
     title: "",
     description: "",
     picture: "",
+    titleEn: "",
+    descriptionEn: "",
+    date: ""
 };
 
 function FormEditPost() {
@@ -34,6 +37,9 @@ function FormEditPost() {
             title: data.title,
             description: data.description,
             picture: data.picture,
+            titleEn:data.titleEn,
+            descriptionEn: data.descriptionEn,
+            
         });
         // TODO
         navigate("/");
@@ -83,6 +89,50 @@ function FormEditPost() {
                     <label htmlFor="description">Opis</label>
                     <i></i>
                 </div>
+
+
+                <div className="box__form--input-box">
+                    <input
+                        type="text"
+                        id="titleEn"
+                        value={data.titleEn}
+                        name="titleEn"
+                        placeholder=""
+                        required="required"
+                        onChange={updateData}
+                    />
+                    <label htmlFor="title">Naslov Eng</label>
+                    <i></i>
+                </div>
+                <div className="box__form--input-box">
+                    <input
+                        type="text"
+                        id="descriptionEn"
+                        value={data.descriptionEn}
+                        name="descriptionEn"
+                        placeholder=""
+                        required="required"
+                        onChange={updateData}
+                    />
+                    <label htmlFor="description">Opis Eng</label>
+                    <i></i>
+                </div>
+                <div className="box__form--input-box">
+                    <input
+                        type="text"
+                        id="date"
+                        value={data.date}
+                        name="date"
+                        placeholder=""
+                        required="required"
+                        onChange={updateData}
+                    />
+                    <label htmlFor="description">Datum</label>
+                    <i></i>
+                </div>
+
+
+
                 <div className="box__form--input-box">
                     <input
                         // style={{ display:"none"}}

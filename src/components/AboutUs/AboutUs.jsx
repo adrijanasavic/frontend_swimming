@@ -18,8 +18,8 @@ function AboutUs() {
             alt="swimming_img"
             className="swimming_img"
           />
-          <p className="p__opensans">{data.about.msc1[language]}</p>
-          <p className="p__opensans">{data.about.msc2[language]}</p>
+          <p className="p__opensans" data-aos="flip-left">{data.about.msc1[language]}</p>
+          <p className="p__opensans" data-aos="flip-left">{data.about.msc2[language]}</p>
         </div>
         <div className="app__aboutus-content_swimm flex__center">
           <h1 className="headtext__cormorant">
@@ -33,8 +33,8 @@ function AboutUs() {
             alt="swimming_img"
             className="swimming_img"
           />
-          <p className="p__opensans">{data.about.bio1[language]}</p>
-          <p className="p__opensans">{data.about.bio2[language]}</p>
+          <p className="p__opensans" data-aos="flip-right">{data.about.bio1[language]}</p>
+          <p className="p__opensans" data-aos="flip-right">{data.about.bio2[language]}</p>
         </div>
       </div>
     </div>

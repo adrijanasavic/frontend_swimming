@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
 import FileService from '../../services/fileService';
 import axios from 'axios';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const initData = {
     title: "",
     description: "",
-    picture: ""
+    picture: "",
+    titleEn: "",
+    descriptionEn: "",
+    date: ""
 };
+
+           
 
 function FormAddPost() {
     const [data, setData] = useState(initData);
+    const navigate = useNavigate();
 
     const handleInputChange = (event) => {
         const newData = { ...data };
@@ -33,15 +39,22 @@ function FormAddPost() {
                     title: data.title,
                     description: data.description,
                     picture: pdfString,
+                    titleEn: data.titleEn,
+                    descriptionEn: data.descriptionEn,
+                    date: data.date
                 })
                 .then((res) => {
                     console.log(res.data);
+                    navigate("/");
                 });
         })
         setData({
             title: "",
             description: "",
             picture: "",
+            titleEn: "",
+            descriptionEn: "",
+            date: ""
         });
     };
 
@@ -75,6 +88,50 @@ function FormAddPost() {
                     <label htmlFor="description">Opis</label>
                     <i></i>
                 </div>
+
+
+                <div className="box__form--input-box">
+                    <input
+                        type="text"
+                        id="titleEn"
+                        value={data.titleEn}
+                        name="titleEn"
+                        placeholder=""
+                        required="required"
+                        onInput={handleInputChange}
+                    />
+                    <label htmlFor="title">Naslov eng</label>
+                    <i></i>
+                </div>
+                <div className="box__form--input-box">
+                    <input
+                        type="text"
+                        id="descriptionEn"
+                        value={data.descriptionEn}
+                        name="descriptionEn"
+                        placeholder=""
+                        required="required"
+                        onInput={handleInputChange}
+                    />
+                    <label htmlFor="description">Opis eng</label>
+                    <i></i>
+                </div>
+
+                <div className="box__form--input-box">
+                    <input
+                        type="text"
+                        id="date"
+                        value={data.date}
+                        name="date"
+                        placeholder=""
+                        onInput={handleInputChange}
+                    />
+                    <label htmlFor="description">Datum</label>
+                    <i></i>
+                </div>
+
+
+
                 <div className="box__form--input-box">
                     <input
                         // style={{ display:"none"}}

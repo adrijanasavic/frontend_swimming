@@ -11,10 +11,10 @@ const Header = () => {
     <div className="app__header app__wrapper section__padding" id="home">
       <div className="app__wrapper_info">
         <SubHeading />
-        <h1 className="app__header-h1">
+        <h1 className="app__header-h1" data-aos="fade-left">
           {data.header.title[language]}
         </h1>
-        <p className="p__opensans" style={{ margin: "2rem 0" }}>
+        <p className="p__opensans" style={{ margin: "2rem 0" }} data-aos="fade-right">
           {data.header.description[language]}
         </p>
         <button type="button" className="custom__button">

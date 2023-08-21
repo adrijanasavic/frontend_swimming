@@ -11,7 +11,7 @@ function Personal() {
 
   return (
       <div className="app__bg app__wrapper section__padding">
-          <div className="app__wrapper_img app__wrapper_img-reverse">
+          <div className="app__wrapper_img app__wrapper_img-reverse" data-aos="zoom-in-up">
               <img src={images.profil} alt="chef" />
           </div>
           <div className="app__wrapper_info">
@@ -20,7 +20,7 @@ function Personal() {
               <h1 className="headtext__cormorant">
                   {language === "En" ? "MSc Zoran Božović" : "MSc Zoran Božović"}
               </h1>
-              <div className="app__chef-content">
+              <div className="app__chef-content" data-aos="zoom-out-down">
                   <div className="app__chef-content-quote">
                       <img src={images.quote} alt="quote" />
                       <p className="p__opensans">{data.about.msc1[language]}</p>
@@ -28,9 +28,7 @@ function Personal() {
                   <p className="p__opensans">{data.about.msc2[language]}</p>
               </div>
               <div className="app__chef-sign">
-                  <p className="p__opensans">
-                      {language === "En" ? "Enrollment throughout the year" : "Upis tokom cele godine"}
-                  </p>
+                
                   <img src={images.signature} alt="sign" />
               </div>
           </div>

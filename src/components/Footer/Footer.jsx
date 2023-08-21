@@ -77,7 +77,7 @@ function Footer() {
               rel="noreferrer"
               href="https://www.linkedin.com/in/adrijana-savi%C4%87-50249176/"
               target="_blank"
-              style={{ textDecoration: "underline" }}
+              
             >
               Adrijana Savić
             </a>

@@ -6,21 +6,25 @@ import images from "./../../constants/images";
 import data from "./../../constants/data";
 import { FaSwimmer } from "react-icons/fa";
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom"
 
 function Navbar() {
-  
-  const [toggleMenu, setToggleMenu] =useState(false);
+
+  const [toggleMenu, setToggleMenu] = useState(false);
   const { language } = useSelector((state) => state.settings);
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="Logo" />
+        <a href="/">
+          <img src={images.logo} alt="Logo" />
+        </a>
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="#home">{data.nav.Home[language]}</a>
+          <a href="/">{data.nav.Home[language]}</a>
         </li>
         <li className="p__opensans">
           <a href="#about">{data.nav.About[language]}</a>
@@ -29,17 +33,23 @@ function Navbar() {
           <a href="#menu">{data.nav.Menu[language]}</a>
         </li>
         <li className="p__opensans">
-          <a href="#contact">{data.nav.Contact[language]}</a>
+          <a href="#blog">{data.nav.Blog[language]}</a>
         </li>
         <li className="p__opensans">
-          <a href="#blog">{data.nav.Blog[language]}</a>
+          <a href="#contact">{data.nav.Contact[language]}</a>
         </li>
       </ul>
       <div className="app__navbar-login">
         <select
           className="select__opensans"
           onChange={(e) => {
-            dispatch(setLanguage(e.target.value));
+            let lang = e.target.value
+            dispatch(setLanguage(lang));
+            if (lang === "Sr") {
+              navigate("/")
+            } else {
+              navigate("/en")
+            }
           }}
           value={language}
         >
@@ -67,7 +77,7 @@ function Navbar() {
             <ul className="app__navbar-smallscreen_links">
               <li className="p__opensans">
                 <a
-                  href="#home"
+                  href="/"
                   onClick={() => {
                     setToggleMenu(false);
                   }}
@@ -95,22 +105,22 @@ function Navbar() {
               </li>
               <li className="p__opensans">
                 <a
-                  href="#contact"
-                  onClick={() => {
-                    setToggleMenu(false);
-                  }}
-                >
-                  {data.nav.Contact[language]}
-                </a>
-              </li>
-              <li className="p__opensans">
-                <a
                   href="#blog"
                   onClick={() => {
                     setToggleMenu(false);
                   }}
                 >
                   {data.nav.Blog[language]}
+                </a>
+              </li>
+              <li className="p__opensans">
+                <a
+                  href="#contact"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                >
+                  {data.nav.Contact[language]}
                 </a>
               </li>
               <li className="p__opensans">

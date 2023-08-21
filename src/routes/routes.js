@@ -18,5 +18,9 @@ export const routes = {
     EDITPOST: {
         name: 'AddPost',
         path: "/post/:id"
+    },
+    DETAILPOST: {
+        name: 'DetailPost',
+        path: "/postdetail/:id"
     }
 };

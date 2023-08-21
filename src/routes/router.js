@@ -6,6 +6,8 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import { Navigate } from "react-router-dom";
 import FormAddPost from "../components/FormAddPost/FormAddPost";
 import FormEditPost from "../components/FormEditPost/FormEditPost";
+import Home from "../pages/Home/Home";
+import DetailPost from "../components/DetailPost/DetailPost";
 
 const router = createBrowserRouter([
     {
@@ -13,8 +15,20 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             {
+                path: "/",
+                element: <Home lang={"Sr"} />
+            },
+            {
+                path: "/en",
+                element: <Home lang={"En"} />
+            },
+            {
                 path: routes.LOGIN.path,
                 element: <Login />
+            },
+            {
+                path: routes.DETAILPOST.path,
+                element: <DetailPost />
             },
             {
                 path: routes.DASHBOARD.path,

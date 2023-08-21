@@ -1,6 +1,6 @@
 .app__header {
     background: var(--color-white);
-    padding-top: 9rem;
+    padding-top: 6rem;
 }
 
 .app__header-h1 {
@@ -9,6 +9,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     line-height: 60px;
-    font-size: 40px;
+    font-size: var(--fontSize-primary);
 }
 

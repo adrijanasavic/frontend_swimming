@@ -13,7 +13,7 @@ const header = {
     En: "Free yourself from fear",
   },
   description: {
-    Sr: "Jedinstveni program obuke za APSOLUTNE POČETNIKE i sve one koji žele da nauče pravilno izvođenje prsne, krauf, leđne i delfin tehnike BEZ OBZIRA NA UZRAST POLAZNIKA.",
+    Sr: "Jedinstveni program obuke za APSOLUTNE POČETNIKE i sve one koji žele da nauče pravilno izvođenje prsne, kraul, leđne i delfin tehnike BEZ OBZIRA NA UZRAST POLAZNIKA.",
     En: "A unique training program for ABSOLUTE BEGINNERS and all those who want to learn the correct execution of chest, krauf, backstroke and dolphin technique REGARDLESS OF THE AGE OF THE STUDENT.",
   },
 };

@@ -9,13 +9,13 @@ function Dashboard() {
         <div className="admin">
             <header className="admin__header">
                 <div className="toolbar">
-                    <a href="/addpost">
+                    <a href="/post">
                         <button className="btn btn--primary">
                             Novi Blog
                         </button>
                     </a>
                     <a
-                        href="/login"
+                        href="/"
                         className="logout"
                         onClick={() => window.localStorage.clear()}>
                         <button className="btn btn--primary">
@@ -25,7 +25,6 @@ function Dashboard() {
                 </div>
             </header>
             <nav className="admin__nav">
-                <Posts />
             </nav>
             <footer className="admin__footer">
                 <ul className="ticker">

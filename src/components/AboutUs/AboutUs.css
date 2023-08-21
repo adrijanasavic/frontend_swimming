@@ -63,6 +63,7 @@
 @media screen and (max-width: 1200px) {
     .app__aboutus-content {
         flex-direction: column;
+        margin-top: 50px;
     }
 
     .app__aboutus-content_swimm {

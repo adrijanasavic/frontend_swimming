@@ -17,7 +17,7 @@ function MenuItem({ tags, title, price }) {
                 </div>
             </div>
             <div className="app__menuitem-sub">
-                <p className="p__opensans" style={{ color: "#1118" }}>
+                <p className="p__opensans">
                     {tags}
                 </p>
             </div>

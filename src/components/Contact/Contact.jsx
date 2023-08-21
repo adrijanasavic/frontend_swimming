@@ -61,8 +61,9 @@ function Contact() {
                     <div className="contact-container-wrapper-left">
                         <h1 className="contact-container-wrapper-left-title">
                             {" "}
-                            My Contact{" "}
-                        </h1>{" "}
+                            {language === "En"
+                                ? "Contact"
+                                : "Kontakt"}                        </h1>{" "}
                         <div className="c-info">
                             <div className="contact-container-wrapper-left-title-item">
                                 <a href="tel://+381641494033">
@@ -84,7 +85,7 @@ function Contact() {
                                         data-aos="fade-right"
                                         data-aos-duration="700"
                                     />
-                                    zoranbozovicplivanje@gmail.com
+                                    casoviplivanja@gmail.com
                                 </a>
                             </div>
                             <div className="contact-container-wrapper-left-title-item">
@@ -138,7 +139,7 @@ function Contact() {
                                 onChange={(event) => setMessage(event.target.value)}
                                 value={message}
                             />
-                            <button className="btn"> Submit </button>
+                            <button className="custom__button"> Submit </button>
                             {
                                 <p>
                                     {done && isFormValid ? (
