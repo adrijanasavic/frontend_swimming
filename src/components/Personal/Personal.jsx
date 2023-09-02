@@ -18,17 +18,30 @@ function Personal() {
               <SubHeading
               />
               <h1 className="headtext__cormorant">
-                  {language === "En" ? "MSc Zoran Božović" : "MSc Zoran Božović"}
+                  {language === "En" ? "Kinesitherapy" : "Kineziterapija"}
               </h1>
               <div className="app__chef-content" data-aos="zoom-out-down">
                   <div className="app__chef-content-quote">
                       <img src={images.quote} alt="quote" />
-                      <p className="p__opensans">{data.about.msc1[language]}</p>
+                      <p className="p__opensans">{data.kinesi.des1[language]}</p>
+                      
                   </div>
-                  <p className="p__opensans">{data.about.msc2[language]}</p>
+                  <p className="p__opensans">{data.kinesi.des2[language]}</p>
               </div>
               <div className="app__chef-sign">
-                
+
+              </div>
+
+              <div className="app__chef-content" data-aos="zoom-out-down">
+                  <div className="app__chef-content-quote">
+                      <img src={images.quote} alt="quote" />
+                      <p className="p__opensans">{data.kinesi.des3[language]}</p>
+
+                  </div>
+                  <p className="p__opensans">{data.kinesi.des4[language]}</p>
+              </div>
+              <div className="app__chef-sign">
+
                   <img src={images.signature} alt="sign" />
               </div>
           </div>

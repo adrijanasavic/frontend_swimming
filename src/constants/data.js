@@ -36,98 +36,120 @@ const about = {
     En: "Individual programs may also include relaxation and body conditioning techniques that help increase mobility and flexibility. The goal is for clients to work on their skills in order to improve their personal swimming.",
   },
 };
-const special = {
+
+const kinesi = {
+  des1: {
+    Sr: "Kao diplomirani kineziterapeut sa  iskustvom, pružam individualne  terapije za sve uzraste koji imaju probleme sa posturalnim deformitetima i sličnim problemima sa mišićno-koštanim sistemom. Radim sa decom i odraslima i pristupam svakom pojedincu sa pažnjom i stručnošću.",
+    En: ""
+  },
+  des2: {
+    Sr: "Moje terapije uključuju klasične, bazične vežbe koje jačaju mišiće leđa, vrata, ruku i nogu, pomažući u ispravljanju posturalnih deformiteta i drugih problema. Uz to, uključujem i vežbe istezanja za povećanje fleksibilnosti i mobilnosti tela.",
+    En: ""
+  },
+  des3: {
+    Sr: "Moj pristup terapiji fokusira se na individualne potrebe svakog pacijenta. Na osnovu procene njihovog trenutnog stanja, prilagođavam program terapije njihovim specifičnim potrebama, sa ciljem da se poboljša postura, smanji bol i poboljša opšte stanje i kvalitet života.",
+    En: ""
+  },
+  des4: {
+    Sr: "Ako imate problema sa posturalnim deformitetima, bolovima u mišićima ili drugim sličnim problemima, kontaktirajte me i saznajte kako vam mogu pomoći da se osećate bolje i živite sa manje bola i nelagodnosti.",
+    En: ""
+  },
+};
+
+const package5 = {
+  En: [
+  
+    {
+      title: "45 minuts",
+      price: "8.000 RSD",
+      tags: "DISCOUNT FROM 1.000 RSD",
+    },
+    {
+      title: "60 minuts",
+      price: "11.000 RSD",
+      tags: "DISCOUNT FROM 1.000 RSD",
+    },
+  ],
+  Sr: [
+   
+    {
+      title: "45 minuta",
+      price: "8.000 RSD",
+      tags: "POPUST OD 1.000 RSD",
+    },
+    {
+      title: "60 minuta",
+      price: "11.000 RSD",
+      tags: "POPUST OD 1.000 RSD",
+    },
+   
+  ],
+};
+
+const package10 = {
   En: [
     {
-      title: "Group",
-      price: "8000 RSD",
-      tags: "PACKAGE OF 8 HOURS | 30 DAYS",
+      title: "30 minuts",
+      price: "10.000 RSD",
+      tags: "DISCOUNT FROM 2.000 RSD",
     },
     {
-      title: "Family",
-      price: "3500 RSD",
-      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+      title: "45 minuts",
+      price: "15.000 RSD",
+      tags: "DISCOUNT FROM 3.000 RSD",
     },
     {
-      title: "Individual",
-      price: "4000 RSD",
-      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
-    },
-    {
-      title: "Therapeutic",
-      price: "3000 RSD",
-      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+      title: "60 minuts",
+      price: "21.000 RSD",
+      tags: "DISCOUNT FROM 3.000 RSD",
     },
   ],
   Sr: [
     {
-      title: "Grupni",
-      price: "8000 RSD",
-      tags: "PAKET 8 ČASOVA | 30 DANA",
+      title: "30 minuta",
+      price: "10.000 RSD",
+      tags: "POPUST OD 2.000 RSD",
     },
     {
-      title: "Porodični",
-      price: "3500 RSD",
-      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+      title: "45 minuta",
+      price: "15.000 RSD",
+      tags: "POPUST OD 3.000 RSD",
     },
     {
-      title: "Individualni",
-      price: "4000 RSD",
-      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+      title: "60 minuta",
+      price: "21.000 RSD",
+      tags: "POPUST OD 3.000 RSD",
     },
-    {
-      title: "Terapijski",
-      price: "3000 RSD",
-      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
-    },
+
   ],
 };
-
-const individual = {
+const package20 = {
   En: [
     {
-      title: "Group",
-      price: "8000 RSD",
-      tags: "PACKAGE OF 8 HOURS | 30 DAYS",
+      title: "30 minuts",
+      price: "18.000 RSD",
+      tags: "DISCOUNT FROM 8.000 RSD",
     },
+
     {
-      title: "Family",
-      price: "3500 RSD",
-      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
-    },
-    {
-      title: "Individual",
-      price: "4000 RSD",
-      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
-    },
-    {
-      title: "Therapeutic",
-      price: "3000 RSD",
-      tags: "PACKAGE 4 or 8 HOURS | 30 DAYS",
+      title: "60 minuts",
+      price: "40.000 RSD",
+      tags: "DISCOUNT FROM 8.000 RSD",
     },
   ],
   Sr: [
     {
-      title: "Grupni",
-      price: "8000 RSD",
-      tags: "PAKET 8 ČASOVA | 30 DANA",
+      title: "30 minuta",
+      price: "18.000 RSD",
+      tags: "POPUST OD 8.000 RSD",
     },
+  
     {
-      title: "Porodični",
-      price: "3500 RSD",
-      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
+      title: "60 minuta",
+      price: "40.000 RSD",
+      tags: "POPUST OD 8.000 RSD",
     },
-    {
-      title: "Individualni",
-      price: "4000 RSD",
-      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
-    },
-    {
-      title: "Terapijski",
-      price: "3000 RSD",
-      tags: "PAKET 4 ili 8 ČASOVA | 30 DANA",
-    },
+
   ],
 };
-
-export default { nav, header, about, special, individual };
+export default { nav, header, about, kinesi, package5, package10, package20 };

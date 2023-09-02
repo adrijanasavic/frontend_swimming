@@ -14,7 +14,7 @@ function DetailPost() {
         console.log(id);
         getPostById();
     }, []);
-    
+
     const getPostById = async () => {
         const response = await axios.get(`/postdetail/${id}`);
         console.log(response);
@@ -41,17 +41,19 @@ function DetailPost() {
                         </div>
                     </div> */}
                     <Link className="custom__button" to="/">
+                        <a href='#blog'>
                         {language === "En" ? "Home page" : "Početna stranica"}
-
+                        
+                        </a>
                     </Link>
                 </div>
                 <div className="image">
                     {data.picture ? (
                         <img src={data.picture} />
                     ) : (
-                        <img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/templates/reactt2_1200x303.png?sfvrsn=3ddeaf3b_2" />
+                            <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                     )}                </div>
-                
+
             </div>
         </div>
     );

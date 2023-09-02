@@ -1,8 +1,12 @@
 .app__specialMenu {
     flex-direction: column;
     padding-top: 8rem;
+    
 }
 
+.app__specialMenu-menu-spec{
+    padding: 0 20px;
+}
 .app__specialMenu-title {
     margin-bottom: 2rem;
     text-align: center;
@@ -57,7 +61,7 @@
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1250px) {
     .app__specialMenu-menu {
         flex-direction: column;
         align-items: center;
