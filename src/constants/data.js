@@ -40,19 +40,19 @@ const about = {
 const kinesi = {
   des1: {
     Sr: "Kao diplomirani kineziterapeut sa  iskustvom, pružam individualne  terapije za sve uzraste koji imaju probleme sa posturalnim deformitetima i sličnim problemima sa mišićno-koštanim sistemom. Radim sa decom i odraslima i pristupam svakom pojedincu sa pažnjom i stručnošću.",
-    En: ""
+    En: "As a qualified kinesitherapist with experience, I provide individual therapies for all ages who have problems with postural deformities and similar problems with the musculoskeletal system. I work with children and adults and approach each individual with care and expertise."
   },
   des2: {
     Sr: "Moje terapije uključuju klasične, bazične vežbe koje jačaju mišiće leđa, vrata, ruku i nogu, pomažući u ispravljanju posturalnih deformiteta i drugih problema. Uz to, uključujem i vežbe istezanja za povećanje fleksibilnosti i mobilnosti tela.",
-    En: ""
+    En: "My therapies include classic, basic exercises that strengthen the muscles of the back, neck, arms and legs, helping to correct postural deformities and other problems. In addition, I also include stretching exercises to increase flexibility and mobility of the body."
   },
   des3: {
     Sr: "Moj pristup terapiji fokusira se na individualne potrebe svakog pacijenta. Na osnovu procene njihovog trenutnog stanja, prilagođavam program terapije njihovim specifičnim potrebama, sa ciljem da se poboljša postura, smanji bol i poboljša opšte stanje i kvalitet života.",
-    En: ""
+    En: "My approach to therapy focuses on the individual needs of each patient. Based on the assessment of their current condition, I adapt the therapy program to their specific needs, with the aim of improving posture, reducing pain and improving the general condition and quality of life."
   },
   des4: {
     Sr: "Ako imate problema sa posturalnim deformitetima, bolovima u mišićima ili drugim sličnim problemima, kontaktirajte me i saznajte kako vam mogu pomoći da se osećate bolje i živite sa manje bola i nelagodnosti.",
-    En: ""
+    En: "If you have problems with postural deformities, muscle pain or other similar problems, contact me and find out how I can help you feel better and live with less pain and discomfort."
   },
 };
 
