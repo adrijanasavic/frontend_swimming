@@ -7,7 +7,7 @@ import { RouterProvider } from "react-router-dom";
 import router from "./routes/router";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://backend-swimming.vercel.app/";
+axios.defaults.baseURL = "https://backend-swimming-4vvtpv104-adrijanasavic.vercel.app/posts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
