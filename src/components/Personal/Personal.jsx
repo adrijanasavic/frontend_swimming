@@ -12,7 +12,7 @@ function Personal() {
   return (
       <div className="app__bg app__wrapper section__padding">
           <div className="app__wrapper_img app__wrapper_img-reverse" data-aos="zoom-in-up">
-              <img src={images.profil} alt="chef" />
+              <img src={images.bazen2} alt="chef" />
           </div>
           <div className="app__wrapper_info">
               <SubHeading
