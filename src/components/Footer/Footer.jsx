@@ -55,16 +55,22 @@ function Footer() {
             {language === "En" ? "Working Hours" : "Radno Vreme"}
           </h1>
           <p className="p__opensans">
-            {language === "En" ? "Monday-Friday:" : "Ponedeljak-Petak"}
+            {language === "En" ? "Monday-Friday:" : "Ponedeljak-Sreda-Petak"}
           </p>
           <p className="p__opensans">
-            {language === "En" ? "10:00 - 18:00" : "10:00 - 18:00"}
+            {language === "En" ? "13:00 - 16:30" : "13:00 - 16:30"}
           </p>
           <p className="p__opensans">
-            {language === "En" ? "Saturday-Sunday:" : "Subota-Nedelja"}
+            {language === "En" ? "Saturday-Sunday:" : "Utorak-Četvrtak"}
           </p>
           <p className="p__opensans">
-            {language === "En" ? "10:00 - 18:00" : "10:00 - 18:00"}
+            {language === "En" ? "13:00 - 17:15" : "13:00 - 17:15"}
+          </p>
+          <p className="p__opensans">
+            {language === "En" ? "Saturday:" : "Subota"}
+          </p>
+          <p className="p__opensans">
+            {language === "En" ? "08:45 - 10:00" : "08:45 - 10:00"}
           </p>
         </div>
       </div>

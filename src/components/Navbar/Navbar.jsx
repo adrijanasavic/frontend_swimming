@@ -33,6 +33,12 @@ function Navbar() {
           <a href="#menu">{data.nav.Menu[language]}</a>
         </li>
         <li className="p__opensans">
+          <a href="#kinesi">{data.nav.Kinesi[language]}</a>
+        </li>
+        <li className="p__opensans">
+          <a href="#gallery">{data.nav.Gallery[language]}</a>
+        </li>
+        <li className="p__opensans">
           <a href="#blog">{data.nav.Blog[language]}</a>
         </li>
         <li className="p__opensans">
@@ -102,6 +108,24 @@ function Navbar() {
                 }}
               >
                 <a href="#menu">{data.nav.Menu[language]}</a>
+              </li>
+              <li
+                className="p__opensans"
+                onClick={() => {
+                  setToggleMenu(false);
+                }}
+              >
+                <a href="#kinesi">{data.nav.Kinesi[language]}</a>
+              </li>
+              <li className="p__opensans">
+                <a
+                  href="#gallery"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                >
+                  {data.nav.Gallery[language]}
+                </a>
               </li>
               <li className="p__opensans">
                 <a

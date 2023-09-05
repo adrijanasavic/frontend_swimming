@@ -8,8 +8,8 @@ function AboutUs() {
   const { language } = useSelector((state) => state.settings);
   return (
     <div
-      className="app__aboutus app__bg flex__center section__padding"
-      id="about"
+      className="app__aboutus app__bg flex__center section__padding" id="about"
+      
     >
       <div className="app__aboutus-content flex__center">
         <div className="app__aboutus-content_about ">
@@ -22,10 +22,10 @@ function AboutUs() {
           <p className="p__opensans" data-aos="flip-left">{data.about.msc2[language]}</p>
         </div>
         <div className="app__aboutus-content_swimm flex__center">
-          <h1 className="headtext__cormorant">
-            {language === "En" ? "MSc Zoran Božović" : "MSc Zoran Božović"}
-          </h1>
           <img src={images.profil} alt="profile" />
+          <h1 className="headtext__cormorant">
+            {language === "En" ? "Msc Zoran Božović" : "Msc Zoran Božović"}
+          </h1>
         </div>
         <div className="app__aboutus-content_history ">
           <img

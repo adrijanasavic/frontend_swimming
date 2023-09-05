@@ -1,5 +1,6 @@
 .app__aboutus {
     /* position: relative; */
+    padding-top: 3rem;
 }
 
 .app__aboutus-overlay {
@@ -17,7 +18,7 @@
     width: 100%;
     z-index: 2;
     display: flex;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
 }
 
 .app__aboutus-content_about {
@@ -50,7 +51,7 @@
 
 .app__aboutus-content_about p,
 .app__aboutus-content_history p {
-    margin: 2rem 0;
+    margin: 1rem 0;
     color: var(--color-grey);
 }
 

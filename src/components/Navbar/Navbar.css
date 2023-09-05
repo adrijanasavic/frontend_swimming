@@ -70,7 +70,7 @@
 .app__navbar-smallscreen_links li {
   margin: 2rem;
   cursor: pointer;
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
   font-size: var(--fontSize-secondary);
   text-align: center;
   font-family: var(--font-base);

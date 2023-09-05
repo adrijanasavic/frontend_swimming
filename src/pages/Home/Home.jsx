@@ -25,8 +25,8 @@ function Home({ lang }) {
       <AboutUs />
       <Specijal />
       <Personal />
-      <Gallery />
       {/* <SwiperPost /> */}
+      <Gallery />
       <Posts />
       <Contact />
       <Footer />

@@ -1,5 +1,5 @@
 .blog {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 .blog .posts {
   width: 90%;
@@ -25,6 +25,7 @@
   border-radius: 6px;
   transition-duration: 1s;
   transition-property: transform, opacity;
+  font-size: var(--fontSize-secondary);
 }
 
 .horizontal > .front {

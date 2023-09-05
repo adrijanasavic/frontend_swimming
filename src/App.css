@@ -24,6 +24,7 @@
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
+  padding-top: 8rem;
 }
 
 .app__wrapper_info {
@@ -93,6 +94,8 @@
   letter-spacing: 0.04em;
   line-height: 28px;
   font-size: var(--fontSize-secondary);
+  font-style: italic;
+  color: black !important;
   /* padding-top: 2rem; */
 }
 
@@ -182,16 +185,24 @@
   }
 
   .p__opensans {
-  font-size: var(--fontSize-secondary);
+    font-size: var(--fontSize-secondary);
   }
 }
 
 @media screen and (max-width: 450px) {
+
+  h1,
+  p {
+    text-align: var(--fontSize-secondary);
+  }
+
   .p__opensans {
-  font-size: var(--fontSize-secondary);  }
+    font-size: var(--fontSize-secondary);
+    text-align: center;
+  }
 
   .p__cormorant {
-  font-size: var(--fontSize-secondary);
+    font-size: var(--fontSize-secondary);
   }
 
   .headtext__cormorant {

@@ -10,10 +10,8 @@ function Personal() {
     const { language } = useSelector((state) => state.settings);
 
   return (
-      <div className="app__bg app__wrapper section__padding">
-          <div className="app__wrapper_img app__wrapper_img-reverse" data-aos="zoom-in-up">
-              <img src={images.bazen2} alt="chef" />
-          </div>
+      <div className="app__bg app__wrapper section__padding" id="kinesi">
+          
           <div className="app__wrapper_info">
               <SubHeading
               />
@@ -28,11 +26,15 @@ function Personal() {
                   </div>
                   <p className="p__opensans">{data.kinesi.des2[language]}</p>
               </div>
-              <div className="app__chef-sign">
 
+              <div className="">
+                  {/* <div className="app__wrapper_img app__wrapper_img-reverse" data-aos="zoom-in-up">
+                      <img src={images.profil} alt="chef" className="personal" />
+                  </div> */}
               </div>
 
               <div className="app__chef-content" data-aos="zoom-out-down">
+                  
                   <div className="app__chef-content-quote">
                       <img src={images.quote} alt="quote" />
                       <p className="p__opensans">{data.kinesi.des3[language]}</p>

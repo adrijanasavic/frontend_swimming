@@ -22,7 +22,7 @@ function Gallery() {
     }
   };
   return (
-    <div className="app__gallery flex__center">
+    <div className="app__gallery flex__center" id="gallery">
       <div className="app__gallery-content">
         <SubHeading />
         <h1 className="headtext__cormorant">

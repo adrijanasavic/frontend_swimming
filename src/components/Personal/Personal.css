@@ -45,3 +45,7 @@
         width: 80px;
     }
 }
+
+.personal{
+    shape-outside: url('./../../assets/profil.png');
+}
