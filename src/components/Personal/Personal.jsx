@@ -44,7 +44,7 @@ function Personal() {
               </div>
               <div className="app__chef-sign">
 
-                  <img src={images.signature} alt="sign" />
+                  {/* <img src={images.signature} alt="sign" /> */}
               </div>
           </div>
       </div>

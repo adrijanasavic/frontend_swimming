@@ -64,6 +64,7 @@
     font-size: var(--fontSize-primary);
     line-height: 41.6px;
     margin-bottom: 1rem;
+    text-align: start;
 }
 
 .footer__copyright {
@@ -89,6 +90,7 @@
     .app__footer-links_work {
         margin: 2rem 0;
         width: 100%;
+        padding: 0 1rem;
     }
 }
 

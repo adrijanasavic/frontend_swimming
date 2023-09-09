@@ -1,6 +1,7 @@
 .app__header {
     background: var(--color-white);
     padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .app__header-h1 {
@@ -13,3 +14,8 @@
     font-style: italic;
 }
 
+@media screen and (max-width: 450px){
+    .app__header-h1{
+        font-size: 28px;
+    }
+}

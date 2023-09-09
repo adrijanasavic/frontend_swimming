@@ -1,3 +1,13 @@
+.spec_title{
+        font-family: var(--font-base);
+            color: var(--color-primary);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            line-height: 60px;
+            font-size: 28px;
+            font-style: italic;
+        }
+
 .app__specialMenu {
     flex-direction: column;
     padding-top: 8rem;

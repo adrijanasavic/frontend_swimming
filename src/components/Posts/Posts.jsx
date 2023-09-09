@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Posts.css";
 import { Link } from "react-router-dom";
-import { useCollapse } from "react-collapsed";
 import { useSelector } from "react-redux";
 
 const paragrafStyles = {
@@ -15,8 +14,6 @@ const paragrafStyles = {
 function Posts() {
     const [data, setData] = useState([]);
     const [user, setUser] = useState(false);
-    const [isExpanded, setExpanded] = useState(false);
-    const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
     const [isOpen, setIsOpen] = useState(false);
     const { language } = useSelector((state) => state.settings);
 

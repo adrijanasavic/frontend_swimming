@@ -1,5 +1,11 @@
 .blog {
-  padding-top: 75px;
+  padding-top: 100px;
+  font-family: var(--font-base);
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-style: italic;
+  text-align: start;
+  font-size: var(--fontSize-posts);
 }
 .blog .posts {
   width: 90%;
@@ -10,7 +16,6 @@
 }
 .blog .posts > .front {
   background-color: #71bdff;
-  color: black !important;
 }
 .blog .posts > .back {
   position: absolute;
@@ -25,14 +30,14 @@
   border-radius: 6px;
   transition-duration: 1s;
   transition-property: transform, opacity;
-  font-size: var(--fontSize-secondary);
+  font-size: var(--fontSize-post);
 }
 
 .horizontal > .front {
   opacity: 1;
   transform: rotateY(0deg);
   text-align: center;
-  font-size: var(--fontSize-primary);
+  font-size: var(--fontSize-post);
 }
 .horizontal > .back {
   opacity: 0;

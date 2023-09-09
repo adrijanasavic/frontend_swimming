@@ -35,7 +35,7 @@ function Footer() {
               <FiFacebook />
             </a>
             <a
-              href="https://www.linkedin.com/in/adrijana-savi%C4%87-50249176/"
+              href="https://twitter.com/bozovic__zoran"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,7 +1,7 @@
 .app__gallery {
     display: flex;
     flex-direction: row;
-    padding: 8rem 0 4rem 6rem;
+    padding: 7rem 0 4rem 6rem;
 }
 
 .app__gallery-content {

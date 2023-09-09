@@ -24,6 +24,7 @@ function Home({ lang }) {
       <Header />
       <AboutUs />
       <Specijal />
+
       <Personal />
       {/* <SwiperPost /> */}
       <Gallery />

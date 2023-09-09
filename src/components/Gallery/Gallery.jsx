@@ -29,7 +29,7 @@ function Gallery() {
           {language === "En" ? "Photo Gallery" : "Naša Galerija"}
         </h1>
         <p
-          className="p__opensans"
+          className="p__opensans" 
           style={{ color: "#1119", marginTop: "2rem" }}
         >
           {data.about.bio1[language]}

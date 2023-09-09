@@ -143,6 +143,7 @@ select {
 
   .app__navbar {
     padding: 1rem;
+    position: fixed;
   }
 
   .app__navbar-login {

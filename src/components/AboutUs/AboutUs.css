@@ -46,12 +46,13 @@
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
-    padding-top: 55px;
+    /* padding-top: 55px; */
+    /* padding: 2rem; */
 }
 
 .app__aboutus-content_about p,
 .app__aboutus-content_history p {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
     color: var(--color-grey);
 }
 
@@ -77,4 +78,8 @@
         width: 80%;
         height: 320px;
     }
+        .app__aboutus-content_about p,
+        .app__aboutus-content_history p {
+           text-align: start;
+        }
 }
