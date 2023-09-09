@@ -71,8 +71,6 @@ function Contact() {
                                     <i
                                         className="uil uil-phone"
                                         aria-label="Home icon"
-                                        data-aos="fade-right"
-                                        data-aos-duration="700"
                                     />
                                     +381641494033
                                 </a>
@@ -82,8 +80,6 @@ function Contact() {
                                     <i
                                         className="uil uil-envelope"
                                         aria-label="Home icon"
-                                        data-aos="fade-right"
-                                        data-aos-duration="700"
                                     />
                                     casoviplivanja@gmail.com
                                 </a>
@@ -92,8 +88,6 @@ function Contact() {
                                 <i
                                     className="uil uil-estate"
                                     aria-label="Home icon"
-                                    data-aos="fade-right"
-                                    data-aos-duration="700"
                                 />
                                 {language === "En"
                                     ? "21000 Novi Sad - Serbia"

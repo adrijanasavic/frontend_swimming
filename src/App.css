@@ -1,5 +1,5 @@
 .section__padding {
-  padding: 1rem 6rem;
+  padding: 0 6rem;
 }
 
 .flex__center {
@@ -34,7 +34,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
 .app__wrapper_img {

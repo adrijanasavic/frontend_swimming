@@ -4,6 +4,7 @@
     font-family: var(--font-alt);
     font-weight: 400;
     font-size: var(--fontSize-secondary);
+    font-style: italic;
 }
 
 .contact-container {
@@ -26,6 +27,7 @@
     font-size: var(--fontSize-primary);
     width: 80%;
     margin-left: 60px;
+    font-style: initial;
 }
 
 .contact-container-wrapper-left-title-item {

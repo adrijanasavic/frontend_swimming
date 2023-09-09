@@ -1,7 +1,6 @@
 .app__header {
     background: var(--color-white);
     padding-top: 1rem;
-    padding-bottom: 3rem;
 }
 
 .app__header-h1 {
