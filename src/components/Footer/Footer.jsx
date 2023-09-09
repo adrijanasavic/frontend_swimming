@@ -75,7 +75,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer__copyright">
-        <p className="p__opensans" dir="ltr">
+        <p className="footerp" dir="ltr">
           Copyright &copy;
           {new Date().getFullYear()}{" "}
           <span>
@@ -83,12 +83,12 @@ function Footer() {
               rel="noreferrer"
               href="https://www.linkedin.com/in/adrijana-savi%C4%87-50249176/"
               target="_blank"
-              
+
             >
-              Adrijana Savić
+              Adrijana Savić.
             </a>
-          </span>
-          . All Rights reserved.
+          </span><br />
+          All Rights reserved.
         </p>
       </div>
     </div>

@@ -34,9 +34,9 @@ function Gallery() {
         >
           {data.about.bio1[language]}
         </p>
-        <button type="button" className="custom__button">
+        {/* <button type="button" className="custom__button">
                   <a href="https://www.instagram.com/instruktorbozoviczoran/?igshid=MzRlODBiNWFlZA%3D%3D">{language === "En" ? "View More" : "Opširnije"}</a>
-        </button>
+        </button> */}
       </div>
       <div className="app__gallery-images" dir="ltr">
         <div className="app__gallery-images_container" ref={scrollRef}>

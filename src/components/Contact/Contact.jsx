@@ -107,20 +107,20 @@ function Contact() {
                     >
                         <p className="contact-container-wrapper-right-desc">
                             {language === "En"
-                                ? "If you have additional questions"
-                                : "Ako imate dodatnih pitanja"}
+                                ? "If you have additional questions, write to us"
+                                : "Ako imate dodatnih pitanja pišite nam"}
                         </p>
                         <form ref={formRef} onSubmit={handleSubmit}>
                             <input
                                 type="text"
-                                placeholder="Name"
+                                placeholder={language === "En" ? "Your name" : "Vaše ime"}
                                 name="user_name"
                                 onChange={(event) => setUserName(event.target.value)}
                                 value={userName}
                             />
                             <input
                                 type="text"
-                                placeholder="Subject"
+                                placeholder={language === "En" ? "Title" : "Naslov"}
                                 name="user_subject"
                                 onChange={(event) => setSubject(event.target.value)}
                                 value={subject}
@@ -134,12 +134,12 @@ function Contact() {
                             />
                             <textarea
                                 rows="10"
-                                placeholder="Message"
+                                placeholder={language === "En" ? "Message" : "Poruka"}
                                 name="message"
                                 onChange={(event) => setMessage(event.target.value)}
                                 value={message}
                             />
-                            <button className="custom__button"> Submit </button>
+                            <button className="custom__button"> {language === "En" ? "Send it" : "Pošaljite"} </button>
                             {
                                 <p>
                                     {done && isFormValid ? (

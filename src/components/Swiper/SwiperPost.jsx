@@ -36,6 +36,7 @@ function SwiperPost() {
             showBtn();
         });
     }, []);
+    
     return (
         <>
             <Swiper
@@ -57,16 +58,11 @@ function SwiperPost() {
                             <div className='swiper-btn'>
                                 <Link className='custom__button' to={`/post/${item._id}`}>sdklasd</Link>
                                 <Link className='custom__button' onClick={() => deletePost(item._id)}>sdklasd</Link>
-
                             </div>
                         </div>
-
                     </SwiperSlide>
-
                 )
             })}
-
-
             </Swiper>
         </>
     )

@@ -26,24 +26,9 @@ function DetailPost() {
                 <div className="text-component">
                     <h1 className='title'>{language === "En" ? data.titleEn : data.title}</h1>
                     <p className='subtitle'>{language === "En" ? data.descriptionEn : data.description}</p>
-                    {/* <div className="status-box">
-                        <div>
-                            <p className='num'>444</p>
-                            <p>companies</p>
-                        </div>
-                        <div>
-                            <p className='num'>444</p>
-                            <p>companies</p>
-                        </div>
-                        <div>
-                            <p className='num'>444</p>
-                            <p>companies</p>
-                        </div>
-                    </div> */}
                     <Link className="custom__button" to="/">
                         <a href='#blog'>
-                        {language === "En" ? "Home page" : "Početna stranica"}
-                        
+                            {language === "En" ? "Home page" : "Početna stranica"}
                         </a>
                     </Link>
                 </div>
@@ -51,7 +36,7 @@ function DetailPost() {
                     {data.picture ? (
                         <img src={data.picture} />
                     ) : (
-                            <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                     )}                </div>
 
             </div>

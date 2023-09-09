@@ -37,11 +37,10 @@ function FormEditPost() {
             title: data.title,
             description: data.description,
             picture: data.picture,
-            titleEn:data.titleEn,
+            titleEn: data.titleEn,
             descriptionEn: data.descriptionEn,
-            
+
         });
-        // TODO
         navigate("/");
     };
 
@@ -131,11 +130,8 @@ function FormEditPost() {
                     <i></i>
                 </div>
 
-
-
                 <div className="box__form--input-box">
                     <input
-                        // style={{ display:"none"}}
                         type="file"
                         id="picture"
                         name="picture"

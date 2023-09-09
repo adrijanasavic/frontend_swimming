@@ -70,7 +70,16 @@
 .footer__copyright {
     margin-top: 3rem;
 }
-
+.footerp{
+    font-family: var(--font-alt);
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        line-height: 28px;
+        font-size: var(--fontSize-secondary);
+        font-style: italic;
+        color: black !important;
+        text-align: center;
+}
 @media screen and (min-width: 2000px) {
     .app__footer-headtext {
         font-size: var(--fontSize-primary);

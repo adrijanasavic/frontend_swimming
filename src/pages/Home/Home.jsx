@@ -7,16 +7,15 @@ import Gallery from "../../components/Gallery/Gallery"
 import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
 import Posts from "../../components/Posts/Posts"
-import SwiperPost from "../../components/Swiper/SwiperPost"
 import { useDispatch } from "react-redux"
 import { setLanguage } from "../../redux/settingsSlice"
 
 function Home({ lang }) {
- 
+
   const dispatch = useDispatch()
 
   useEffect(() => {
-      dispatch(setLanguage(lang))
+    dispatch(setLanguage(lang))
   }, [lang])
 
   return (
@@ -24,7 +23,6 @@ function Home({ lang }) {
       <Header />
       <AboutUs />
       <Specijal />
-
       <Personal />
       {/* <SwiperPost /> */}
       <Gallery />

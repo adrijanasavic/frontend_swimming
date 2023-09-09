@@ -12,8 +12,6 @@ const initData = {
     date: ""
 };
 
-           
-
 function FormAddPost() {
     const [data, setData] = useState(initData);
     const navigate = useNavigate();
@@ -89,7 +87,6 @@ function FormAddPost() {
                     <i></i>
                 </div>
 
-
                 <div className="box__form--input-box">
                     <input
                         type="text"
@@ -130,11 +127,8 @@ function FormAddPost() {
                     <i></i>
                 </div>
 
-
-
                 <div className="box__form--input-box">
                     <input
-                        // style={{ display:"none"}}
                         type="file"
                         id="picture"
                         name="picture"
