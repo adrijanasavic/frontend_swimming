@@ -18,7 +18,7 @@ function Posts() {
     const { language } = useSelector((state) => state.settings);
 
     const client = axios.create({
-        baseURL: "http://localhost:4000/posts",
+        baseURL: "https://backend-swimming-git-main-adrijanasavic.vercel.app/posts",
     });
 
     const showBtn = () => {
