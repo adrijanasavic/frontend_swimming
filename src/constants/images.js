@@ -1,5 +1,5 @@
 import bg from "../assets/bg.png";
-import profil from "../assets/profil.png";
+import profil from "../assets/baka.png";
 import logo from "../assets/logo.png";
 import bazen1 from "../assets/bazen1.png";
 import bazen2 from "../assets/bazen2.png";

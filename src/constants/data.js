@@ -58,5 +58,20 @@ const kinesi = {
   },
 };
 
+const experiences = {
+  des1: {
+    Sr: "Nekada su bili apsolutni neplivači, bojeći se da uđu u bazen.  Zahvaljujući tome što su odlučili da pohađaju časove plivanja, moji bivši polaznici su postigli nešto što su smatrali nezamislivim - sada samostalno plivaju u dubokoj vodi!",
+    En: "They used to be absolute non-swimmers, afraid to enter the pool. By choosing to take swimming lessons, my former students have achieved something they thought was unimaginable - they are now swimming independently in deep water!"
+  },
+  des2: {
+    Sr: "Sa svakim časom su napredovali i strah od vode polako je nestajao. Krajnji rezultat je bio sjajan - ne samo da su naučili da plivaju, već su razvili  samopouzdanje, samouverenost  i sigurnost u vodi.",
+    En:"With each lesson they progressed and the fear of water slowly disappeared. The end result was great - not only did they learn to swim, but they developed confidence, self-assurance and safety in the water."
+   },
+  des3: {
+    Sr: "Ponosan sam na sve svoje bivše polaznike, koji su ostvarili ovaj veliki uspeh!",
+    En:"I am proud of all my former students, who achieved this great success!"
+   },
 
-export default { nav, header, about, kinesi  };
+};
+
+export default { nav, header, about, kinesi, experiences };

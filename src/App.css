@@ -25,6 +25,8 @@
   background-repeat: repeat;
   background-attachment: fixed;
   padding-top: 6rem;
+  padding-bottom: 6rem;
+  
 }
 
 .app__wrapper_info {
