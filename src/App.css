@@ -25,8 +25,7 @@
   background-repeat: repeat;
   background-attachment: fixed;
   padding-top: 6rem;
-  padding-bottom: 6rem;
-  
+  padding-bottom: 2rem;
 }
 
 .app__wrapper_info {
@@ -36,7 +35,8 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-    padding-bottom: 2rem;
+  padding-top: 1rem;
+  /* padding-bottom: 2rem; */
   }
 
 .app__wrapper_img {
@@ -156,10 +156,6 @@
     flex-direction: column;
   }
 
-  .app__wrapper_img {
-    margin: 5rem 0 0 0;
-  }
-
   .app__wrapper_img-reverse {
     margin: 0 0 5rem 0;
   }
@@ -171,14 +167,14 @@
 
 @media screen and (max-width: 850px) {
   .section__padding {
-    padding: 4rem;
+    /* padding: 4rem; */
     background-color: var(--font-white);
   }
 }
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .p__cormorant {
@@ -189,6 +185,9 @@
     /* padding-bottom: 1rem; */
     font-size: var(--fontSize-secondary);
   }
+    .app__wrapper_info{
+      margin-top: 80px;
+    }
 }
 
 @media screen and (max-width: 450px) {

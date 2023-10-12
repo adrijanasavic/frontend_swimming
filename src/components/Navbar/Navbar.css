@@ -91,10 +91,10 @@ select {
   font-family: var(--font-base);
 }
 
-.app__navbar-smallscreen_links select>option {
+.app__navbar-smallscreen_links select > option {
   cursor: pointer;
   color: var(--color-white) !important;
-    font-size: var(--fontSize-secondary);
+  font-size: var(--fontSize-secondary);
   font-family: var(--font-base);
 }
 

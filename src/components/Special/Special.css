@@ -1,23 +1,24 @@
-.spec_title{
-        font-family: var(--font-base);
-            color: var(--color-primary);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            line-height: 60px;
-            font-size: 28px;
-            font-style: italic;
-        }
+.spec_title {
+    font-family: var(--font-base);
+    color: var(--color-primary);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-size: 28px;
+    font-style: italic;
+}
 
 .app__specialMenu {
     flex-direction: column;
     padding-top: 8rem;
     /* margin-bottom: 2rem; */
-    
+
 }
 
-.app__specialMenu-menu-spec{
+.app__specialMenu-menu-spec {
     padding: 0 20px;
 }
+
 .app__specialMenu-title {
     margin-bottom: 2rem;
     text-align: center;

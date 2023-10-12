@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     padding: 7rem 0 0 6rem;
+    margin-bottom: 2rem;
 }
 
 .app__gallery-content {
@@ -116,6 +117,7 @@
 @media screen and (max-width: 650px) {
     .app__gallery {
         padding: 4rem 0 0 2rem;
+        margin-bottom: -3rem;
     }
 
     .app__gallery-content {

@@ -6,14 +6,13 @@ import images from "./../../constants/images";
 import data from "./../../constants/data";
 import { FaSwimmer } from "react-icons/fa";
 import "./Navbar.css";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
-
   const [toggleMenu, setToggleMenu] = useState(false);
   const { language } = useSelector((state) => state.settings);
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <nav className="app__navbar">
@@ -49,12 +48,12 @@ function Navbar() {
         <select
           className="select__opensans"
           onChange={(e) => {
-            let lang = e.target.value
+            let lang = e.target.value;
             dispatch(setLanguage(lang));
             if (lang === "Sr") {
-              navigate("/")
+              navigate("/");
             } else {
-              navigate("/en")
+              navigate("/en");
             }
           }}
           value={language}

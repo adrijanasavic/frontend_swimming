@@ -1,5 +1,4 @@
 .app__aboutus {
-    /* position: relative; */
     padding-top: 3rem;
 }
 
@@ -76,8 +75,9 @@
         width: 80%;
         height: 320px;
     }
-        .app__aboutus-content_about p,
-        .app__aboutus-content_history p {
-           text-align: start;
-        }
+
+    .app__aboutus-content_about p,
+    .app__aboutus-content_history p {
+        text-align: start;
+    }
 }

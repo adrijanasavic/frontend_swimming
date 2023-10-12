@@ -29,9 +29,11 @@ function Footer() {
         <div className="app__footer-links_logo">
           <img src={images.logo} alt="footer_logo" />
           <div className="app__footer-links_icons">
-            <a href="https://www.facebook.com/zoranbozovic69"
+            <a
+              href="https://www.facebook.com/zoranbozovic69"
               target="_blank"
-              rel="noreferrer" >
+              rel="noreferrer"
+            >
               <FiFacebook />
             </a>
             <a
@@ -55,13 +57,15 @@ function Footer() {
             {language === "En" ? "Working Hours" : "Radno Vreme"}
           </h1>
           <p className="p__opensans">
-            {language === "En" ? "Monday-Friday:" : "Ponedeljak-Sreda-Petak"}
+            {language === "En"
+              ? "Monday-Wednesday-Friday:"
+              : "Ponedeljak-Sreda-Petak"}
           </p>
           <p className="p__opensans">
             {language === "En" ? "13:00 - 16:30" : "13:00 - 16:30"}
           </p>
           <p className="p__opensans">
-            {language === "En" ? "Saturday-Sunday:" : "Utorak-Četvrtak"}
+            {language === "En" ? "Saturday-Thursday:" : "Utorak-Četvrtak"}
           </p>
           <p className="p__opensans">
             {language === "En" ? "13:00 - 17:15" : "13:00 - 17:15"}
@@ -83,11 +87,11 @@ function Footer() {
               rel="noreferrer"
               href="https://www.linkedin.com/in/adrijana-savi%C4%87-50249176/"
               target="_blank"
-
             >
               Adrijana Savić.
             </a>
-          </span><br />
+          </span>
+          <br />
           All Rights reserved.
         </p>
       </div>

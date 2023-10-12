@@ -6,7 +6,28 @@ import data from "../../constants/data";
 import SubHeading from "../SubHeading/SubHeading";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 
-const gallery = [images.bazen1, images.bazen2, images.bazen3];
+const gallery = [
+  images.bazen1,
+  images.bazen2,
+  images.bazen3,
+  images.bazen4,
+  images.bazen17,
+  images.bazen5,
+  images.bazen6,
+  images.bazen7,
+  images.bazen8,
+  images.bazen9,
+  images.bazen10,
+  images.bazen11,
+  images.bazen12,
+  images.bazen13,
+  images.bazen14,
+  images.bazen15,
+  images.bazen16,
+  images.bazen18,
+  images.bazen19,
+  images.bazen20,
+];
 
 function Gallery() {
   const { language } = useSelector((state) => state.settings);
@@ -29,7 +50,7 @@ function Gallery() {
           {language === "En" ? "Photo Gallery" : "Naša Galerija"}
         </h1>
         <p
-          className="p__opensans" 
+          className="p__opensans"
           style={{ color: "#1119", marginTop: "2rem" }}
         >
           {data.about.bio1[language]}
